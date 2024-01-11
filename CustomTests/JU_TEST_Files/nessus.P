@@ -1,0 +1,13 @@
+inCompetent('172.28.0.12_victim').
+hasAccount('172.28.0.12_victim', '172.28.0.12', user).
+attackerLocated(internet).
+attackGoal(execCode('172.28.0.12', _)).
+inCompetent('172.28.0.2_victim').
+hasAccount('172.28.0.2_victim', '172.28.0.2', user).
+attackerLocated(internet).
+attackGoal(execCode('172.28.0.2', _)).
+inCompetent('172.28.0.1_victim').
+hasAccount('172.28.0.1_victim', '172.28.0.1', user).
+attackerLocated(internet).
+attackGoal(execCode('172.28.0.1', _)).
+hacl(_,_,_,_).

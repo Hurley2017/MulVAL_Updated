@@ -1,0 +1,96 @@
+[xsb_configuration loaded]
+[sysinitrc loaded]
+[xsbbrat loaded]
+
+XSB Version 5.0.0 (Green Tea) of May 15, 2022
+[x86_64-pc-linux-gnu 64 bits; mode: optimal; engine: slg-wam; scheduling: local]
+[Build date: 2024-01-08]
+
+| ?- [Compiling ./results]
+[results compiled, cpu time used: 0.026 seconds]
+[results loaded, cpu time used: 0.001 seconds]
+
+yes
+| ?- [libmulval loaded, cpu time used: 0.001 seconds]
+
+yes
+| ?- [nessus_translator loaded]
+
+yes
+| ?- ++Error[XSB/Runtime/P]: [Existence (No file/module /usr/local/bin/xsb-5.0.0/bin/syslib/machine exists)]  in arg 1 of predicate consult/1
+Forward Continuation...
+... machine:xsb_backtrace/1  From /usr/local/bin/xsb-5.0.0/syslib/machine.xwam
+... consult:reconsult0/3  From /usr/local/bin/xsb-5.0.0/syslib/consult.xwam
+... x_interp:_$call/1  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... x_interp:call_query/1  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:catch/3  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... x_interp:interpreter/0  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... loader:ll_code_call/3  From /usr/local/bin/xsb-5.0.0/syslib/loader.xwam
+... loader:find_ofile_and_load/7  From /usr/local/bin/xsb-5.0.0/syslib/loader.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:catch/3  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+| ?- 
+yes
+| ?- ++Error[XSB/Runtime/P]: [Existence (No predicate usermod : vuln_exists / 7 exists)] []
+Forward Continuation...
+... machine:xsb_backtrace/1  From /usr/local/bin/xsb-5.0.0/syslib/machine.xwam
+... vuln_exists/7  From /home/tusher/mulval/CustomTests/HomeWiFi/usermod
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:call_c/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... x_interp:_$call/1  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... x_interp:call_query/1  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:catch/3  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... x_interp:interpreter/0  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... loader:ll_code_call/3  From /usr/local/bin/xsb-5.0.0/syslib/loader.xwam
+... loader:find_ofile_and_load/7  From /usr/local/bin/xsb-5.0.0/syslib/loader.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:catch/3  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+| ?- ++Error[XSB/Runtime/P]: [Existence (No predicate usermod : vuln_exists / 7 exists)] []
+Forward Continuation...
+... machine:xsb_backtrace/1  From /usr/local/bin/xsb-5.0.0/syslib/machine.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:call_c/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... x_interp:_$call/1  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... x_interp:call_query/1  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:catch/3  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... x_interp:interpreter/0  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... loader:ll_code_call/3  From /usr/local/bin/xsb-5.0.0/syslib/loader.xwam
+... loader:find_ofile_and_load/7  From /usr/local/bin/xsb-5.0.0/syslib/loader.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:catch/3  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+| ?- ++Error[XSB/Runtime/P]: [Existence (No predicate usermod : vuln_exists / 7 exists)] []
+Forward Continuation...
+... machine:xsb_backtrace/1  From /usr/local/bin/xsb-5.0.0/syslib/machine.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:call_c/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... x_interp:_$call/1  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... x_interp:call_query/1  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:catch/3  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... x_interp:interpreter/0  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... loader:ll_code_call/3  From /usr/local/bin/xsb-5.0.0/syslib/loader.xwam
+... loader:find_ofile_and_load/7  From /usr/local/bin/xsb-5.0.0/syslib/loader.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:catch/3  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+| ?- ++Error[XSB/Runtime/P]: [Existence (No predicate usermod : vuln_exists / 7 exists)] []
+Forward Continuation...
+... machine:xsb_backtrace/1  From /usr/local/bin/xsb-5.0.0/syslib/machine.xwam
+... vulExists/3  From /home/tusher/mulval/src/adapter/nessus_translator.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:call_c/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... x_interp:_$call/1  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... x_interp:call_query/1  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:catch/3  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... x_interp:interpreter/0  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... loader:ll_code_call/3  From /usr/local/bin/xsb-5.0.0/syslib/loader.xwam
+... loader:find_ofile_and_load/7  From /usr/local/bin/xsb-5.0.0/syslib/loader.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:catch/3  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+| ?- 
+yes
+| ?- 
+End XSB (cputime 0.08 secs, elapsetime 0.11 secs)

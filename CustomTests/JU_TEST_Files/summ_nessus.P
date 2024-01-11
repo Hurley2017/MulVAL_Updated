@@ -1,0 +1,39 @@
+hacl(_h1064,_h1065,_h1066,_h1067).
+
+hasAccount('172.28.0.12_victim','172.28.0.12',user).
+
+hasAccount('172.28.0.2_victim','172.28.0.2',user).
+
+hasAccount('172.28.0.1_victim','172.28.0.1',user).
+
+inCompetent('172.28.0.12_victim').
+
+inCompetent('172.28.0.2_victim').
+
+inCompetent('172.28.0.1_victim').
+
+attackGoal(execCode('172.28.0.12',_h751)).
+
+attackGoal(execCode('172.28.0.2',_h758)).
+
+attackGoal(execCode('172.28.0.1',_h765)).
+
+attackerLocated(internet).
+
+attackerLocated(internet).
+
+attackerLocated(internet).
+
+inCompetent('172.28.0.12_victim').
+hasAccount('172.28.0.12_victim', '172.28.0.12', user).
+attackerLocated(internet).
+attackGoal(execCode('172.28.0.12', _)).
+inCompetent('172.28.0.2_victim').
+hasAccount('172.28.0.2_victim', '172.28.0.2', user).
+attackerLocated(internet).
+attackGoal(execCode('172.28.0.2', _)).
+inCompetent('172.28.0.1_victim').
+hasAccount('172.28.0.1_victim', '172.28.0.1', user).
+attackerLocated(internet).
+attackGoal(execCode('172.28.0.1', _)).
+hacl(_,_,_,_).

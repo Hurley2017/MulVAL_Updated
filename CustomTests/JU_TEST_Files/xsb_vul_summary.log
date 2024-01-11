@@ -1,0 +1,84 @@
+[xsb_configuration loaded]
+[sysinitrc loaded]
+[xsbbrat loaded]
+
+XSB Version 5.0.0 (Green Tea) of May 15, 2022
+[x86_64-pc-linux-gnu 64 bits; mode: optimal; engine: slg-wam; scheduling: local]
+[Build date: 2024-01-08]
+
+| ?- [libmulval loaded]
+
+yes
+| ?- [auxiliary loaded]
+
+yes
+| ?- [vul_summary loaded, cpu time used: 0.001 seconds]
+
+yes
+| ?- [./nessus.P dynamically loaded, cpu time used: 0.010 seconds]
+
+yes
+| ?- 
+yes
+| ?- ++Error[XSB/Runtime/P]: [Existence (No predicate usermod : vulExists / 3 exists)] []
+Forward Continuation...
+... machine:xsb_backtrace/1  From /usr/local/bin/xsb-5.0.0/syslib/machine.xwam
+... standard:call_c/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... setof:bfindall/4  From /usr/local/bin/xsb-5.0.0/syslib/setof.xwam
+... setof:bagof1/3  From /usr/local/bin/xsb-5.0.0/syslib/setof.xwam
+... setof:setof/3  From /usr/local/bin/xsb-5.0.0/syslib/setof.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... setof:findall/3  From /usr/local/bin/xsb-5.0.0/syslib/setof.xwam
+... x_interp:_$call/1  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... x_interp:call_query/1  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:catch/3  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... x_interp:interpreter/0  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... loader:ll_code_call/3  From /usr/local/bin/xsb-5.0.0/syslib/loader.xwam
+... loader:find_ofile_and_load/7  From /usr/local/bin/xsb-5.0.0/syslib/loader.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:catch/3  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+| ?- ++Error[XSB/Runtime/P]: [Existence (No predicate usermod : networkServiceInfo / 5 exists)] []
+Forward Continuation...
+... machine:xsb_backtrace/1  From /usr/local/bin/xsb-5.0.0/syslib/machine.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:call_c/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... x_interp:_$call/1  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... x_interp:call_query/1  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:catch/3  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... x_interp:interpreter/0  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... loader:ll_code_call/3  From /usr/local/bin/xsb-5.0.0/syslib/loader.xwam
+... loader:find_ofile_and_load/7  From /usr/local/bin/xsb-5.0.0/syslib/loader.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:catch/3  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+| ?- 
+Host = _h377
+Host1 = _h419
+Protocol = _h461
+Port = _h503
+L = [hacl(_h1064,_h1065,_h1066,_h1067)]
+yes
+| ?- 
+A = _h377
+B = _h419
+C = _h461
+L = [hasAccount(172.28.0.12_victim,172.28.0.12,user),hasAccount(172.28.0.2_victim,172.28.0.2,user),hasAccount(172.28.0.1_victim,172.28.0.1,user)]
+yes
+| ?- 
+A = _h377
+L = [inCompetent(172.28.0.12_victim),inCompetent(172.28.0.2_victim),inCompetent(172.28.0.1_victim)]
+yes
+| ?- 
+A = _h377
+L = [attackGoal(execCode(172.28.0.12,_h751)),attackGoal(execCode(172.28.0.2,_h758)),attackGoal(execCode(172.28.0.1,_h765))]
+yes
+| ?- 
+A = _h377
+L = [attackerLocated(internet),attackerLocated(internet),attackerLocated(internet)]
+yes
+| ?- 
+yes
+| ?- 
+End XSB (cputime 0.06 secs, elapsetime 0.07 secs)

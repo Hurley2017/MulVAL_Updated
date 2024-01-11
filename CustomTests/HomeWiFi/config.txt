@@ -1,0 +1,3 @@
+jdbc:mysql://localhost:3306/nvd
+root
+Tusher@9051
