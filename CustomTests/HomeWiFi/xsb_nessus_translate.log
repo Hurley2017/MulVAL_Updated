@@ -7,19 +7,26 @@ XSB Version 5.0.0 (Green Tea) of May 15, 2022
 [Build date: 2024-01-08]
 
 | ?- [Compiling ./results]
-[results compiled, cpu time used: 0.026 seconds]
-[results loaded, cpu time used: 0.001 seconds]
+[results compiled, cpu time used: 0.022 seconds]
+[results loaded]
 
 yes
-| ?- [libmulval loaded, cpu time used: 0.001 seconds]
+| ?- [libmulval loaded]
 
 yes
 | ?- [nessus_translator loaded]
 
 yes
-| ?- ++Error[XSB/Runtime/P]: [Existence (No file/module /usr/local/bin/xsb-5.0.0/bin/syslib/machine exists)]  in arg 1 of predicate consult/1
+| ?- [gpp: Preprocessing /usr/local/bin/xsb-5.0.0/syslib/machine.P]
+[Compiling /usr/local/bin/xsb-5.0.0/syslib/machine]
+++Error[XSB/Runtime/P]: [Permission (Operation) open[mode=w,errno= EACCES: Permission denied] on file: /usr/local/bin/xsb-5.0.0/syslib/machine.xwam.dev-7489]  in open/3
 Forward Continuation...
 ... machine:xsb_backtrace/1  From /usr/local/bin/xsb-5.0.0/syslib/machine.xwam
+... standard:open/3  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... compile:compile1/9  From /usr/local/bin/xsb-5.0.0/cmplib/compile.xwam
+... compile:compile_parsed_file/12  From /usr/local/bin/xsb-5.0.0/cmplib/compile.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... consult:compile_f/7  From /usr/local/bin/xsb-5.0.0/syslib/consult.xwam
 ... consult:reconsult0/3  From /usr/local/bin/xsb-5.0.0/syslib/consult.xwam
 ... x_interp:_$call/1  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
 ... x_interp:call_query/1  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
@@ -93,4 +100,4 @@ Forward Continuation...
 | ?- 
 yes
 | ?- 
-End XSB (cputime 0.08 secs, elapsetime 0.11 secs)
+End XSB (cputime 0.37 secs, elapsetime 0.41 secs)

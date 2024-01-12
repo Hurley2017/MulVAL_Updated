@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Loop through all files in the current directory
+for file in *; do
+    # Check if the item is a file
+    if [ -f "$file" ]; then
+        # Get the length of the filename
+        length=${#file}
+
+        # Check if the length is greater than 1 before renaming
+        if [ $length -gt 1 ]; then
+            # Remove the last character from the filename
+            new_name="${file:0:($length-9)}"
+
+            # Rename the file
+            mv "$file" "$new_name.xml"
+
+            echo "Renamed: $file to $new_name"
+        else
+            echo "Skipping: $file (Cannot reduce further)"
+        fi
+    fi
+done
+

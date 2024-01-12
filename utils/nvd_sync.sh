@@ -50,7 +50,8 @@ year=$(date +"%Y")
 while [ $i -le $year ]; do
     filename="nvdcve-${i}trans.xml.gz"
     wget "http://nvd.nist.gov/download/$filename"
-    gunzip -f "$filename"
+    mv $filename "nvdcve-${i}.xml.gz"
+    gunzip -f "nvdcve-${i}.xml.gz"
     i=$((i + 1))
 done
 cd ..

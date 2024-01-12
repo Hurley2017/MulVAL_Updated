@@ -19,6 +19,8 @@
 export MALLOC_CHECK_=0
 #CLASSPATH=$CLASSPATH:$MULVALROOT/lib/dom4j-1.6.1.jar:$MULVALROOT/lib/jaxen-1.1.1.jar:$MULVALROOT/lib/mysql-connector-java-5.1.8-bin.jar:$MULVALROOT/bin/adapter
 
+XSBHOME=/usr/local/bin/xsb-5.0.0/bin
+
 CLASSPATH=$CLASSPATH:$MULVALROOT/lib/dom4j-1.6.1.jar:$MULVALROOT/lib/jaxen-1.1.1.jar:/usr/share/java/mysql-connector-java-8.2.0.jar:$MULVALROOT/bin/adapter
 
 ADAPTERSRCPATH=$MULVALROOT/src/adapter
@@ -52,14 +54,14 @@ else
 fi
 
 
-java -cp $CLASSPATH GetTplQry_nessusXML vulInfo.txt
+sudo java -cp $CLASSPATH GetTplQry_nessusXML vulInfo.txt
 
 xsb_logfile="xsb_nessus_translate.log"
 xsb 2>$xsb_logfile 1>&2 <<EOF
 [results].
 ['$MULVALROOT/lib/libmulval'].
 ['$ADAPTERSRCPATH/nessus_translator'].
-['$XSBHOME/syslib/machine'].
+['/usr/local/bin/xsb-5.0.0/syslib/machine'].
 tell('nessus.P').
 
 findall(vulProperty(A,B,C), vulProperty(A,B,C), L), parsort(L, [asc(1)], 1, P), list_apply(P, write_clause_to_stdout).
