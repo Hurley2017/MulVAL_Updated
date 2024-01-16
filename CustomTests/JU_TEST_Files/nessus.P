@@ -8,6 +8,8 @@ attackerLocated(internet).
 attackGoal(execCode('172.28.0.2', _)).
 inCompetent('172.28.0.1_victim').
 hasAccount('172.28.0.1_victim', '172.28.0.1', user).
+vulExists('172.28.0.12', 'CAN-2002-0392', httpd).
+vulProperty('CAN-2002-0392', remoteExploit, privEscalation).
 attackerLocated(internet).
 attackGoal(execCode('172.28.0.1', _)).
 hacl(_,_,_,_).

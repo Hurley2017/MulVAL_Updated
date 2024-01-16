@@ -1,0 +1,31 @@
+inCompetent('192.168.0.108_victim').
+hasAccount('192.168.0.108_victim', '192.168.0.108', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.0.108', _)).
+inCompetent('192.168.0.106_victim').
+hasAccount('192.168.0.106_victim', '192.168.0.106', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.0.106', _)).
+inCompetent('192.168.0.104_victim').
+hasAccount('192.168.0.104_victim', '192.168.0.104', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.0.104', _)).
+inCompetent('192.168.0.103_victim').
+hasAccount('192.168.0.103_victim', '192.168.0.103', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.0.103', _)).
+inCompetent('192.168.0.101_victim').
+hasAccount('192.168.0.101_victim', '192.168.0.101', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.0.101', _)).
+inCompetent('192.168.0.100_victim').
+hasAccount('192.168.0.100_victim', '192.168.0.100', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.0.100', _)).
+inCompetent('192.168.0.1_victim').
+hasAccount('192.168.0.1_victim', '192.168.0.1', user).
+vulExists('192.168.0.103', 'CAN-2002-0392', httpd).
+vulProperty('CAN-2002-0392', remoteExploit, privEscalation).
+attackerLocated(internet).
+attackGoal(execCode('192.168.0.1', _)).
+hacl(_,_,_,_).

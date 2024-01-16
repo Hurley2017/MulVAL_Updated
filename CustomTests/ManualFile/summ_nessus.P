@@ -1,0 +1,87 @@
+hacl(_h1064,_h1065,_h1066,_h1067).
+
+hasAccount('192.168.0.108_victim','192.168.0.108',user).
+
+hasAccount('192.168.0.106_victim','192.168.0.106',user).
+
+hasAccount('192.168.0.104_victim','192.168.0.104',user).
+
+hasAccount('192.168.0.103_victim','192.168.0.103',user).
+
+hasAccount('192.168.0.101_victim','192.168.0.101',user).
+
+hasAccount('192.168.0.100_victim','192.168.0.100',user).
+
+hasAccount('192.168.0.1_victim','192.168.0.1',user).
+
+inCompetent('192.168.0.108_victim').
+
+inCompetent('192.168.0.106_victim').
+
+inCompetent('192.168.0.104_victim').
+
+inCompetent('192.168.0.103_victim').
+
+inCompetent('192.168.0.101_victim').
+
+inCompetent('192.168.0.100_victim').
+
+inCompetent('192.168.0.1_victim').
+
+attackGoal(execCode('192.168.0.108',_h751)).
+
+attackGoal(execCode('192.168.0.106',_h758)).
+
+attackGoal(execCode('192.168.0.104',_h765)).
+
+attackGoal(execCode('192.168.0.103',_h772)).
+
+attackGoal(execCode('192.168.0.101',_h779)).
+
+attackGoal(execCode('192.168.0.100',_h786)).
+
+attackGoal(execCode('192.168.0.1',_h793)).
+
+attackerLocated(internet).
+
+attackerLocated(internet).
+
+attackerLocated(internet).
+
+attackerLocated(internet).
+
+attackerLocated(internet).
+
+attackerLocated(internet).
+
+attackerLocated(internet).
+
+inCompetent('192.168.0.108_victim').
+hasAccount('192.168.0.108_victim', '192.168.0.108', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.0.108', _)).
+inCompetent('192.168.0.106_victim').
+hasAccount('192.168.0.106_victim', '192.168.0.106', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.0.106', _)).
+inCompetent('192.168.0.104_victim').
+hasAccount('192.168.0.104_victim', '192.168.0.104', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.0.104', _)).
+inCompetent('192.168.0.103_victim').
+hasAccount('192.168.0.103_victim', '192.168.0.103', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.0.103', _)).
+inCompetent('192.168.0.101_victim').
+hasAccount('192.168.0.101_victim', '192.168.0.101', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.0.101', _)).
+inCompetent('192.168.0.100_victim').
+hasAccount('192.168.0.100_victim', '192.168.0.100', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.0.100', _)).
+inCompetent('192.168.0.1_victim').
+hasAccount('192.168.0.1_victim', '192.168.0.1', user).
+attackerLocated(internet).
+attackGoal(execCode('192.168.0.1', _)).
+hacl(_,_,_,_).

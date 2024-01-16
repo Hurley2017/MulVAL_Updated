@@ -1,5 +1,5 @@
 [xsb_configuration loaded]
-[sysinitrc loaded]
+[sysinitrc loaded, cpu time used: 0.001 seconds]
 [xsbbrat loaded]
 
 XSB Version 5.0.0 (Green Tea) of May 15, 2022
@@ -7,7 +7,7 @@ XSB Version 5.0.0 (Green Tea) of May 15, 2022
 [Build date: 2024-01-08]
 
 | ?- [Compiling ./results]
-[results compiled, cpu time used: 0.022 seconds]
+[results compiled, cpu time used: 0.012 seconds]
 [results loaded]
 
 yes
@@ -19,7 +19,7 @@ yes
 yes
 | ?- [gpp: Preprocessing /usr/local/bin/xsb-5.0.0/syslib/machine.P]
 [Compiling /usr/local/bin/xsb-5.0.0/syslib/machine]
-++Error[XSB/Runtime/P]: [Permission (Operation) open[mode=w,errno= EACCES: Permission denied] on file: /usr/local/bin/xsb-5.0.0/syslib/machine.xwam.dev-7489]  in open/3
+++Error[XSB/Runtime/P]: [Permission (Operation) open[mode=w,errno= EACCES: Permission denied] on file: /usr/local/bin/xsb-5.0.0/syslib/machine.xwam.dev-16481]  in open/3
 Forward Continuation...
 ... machine:xsb_backtrace/1  From /usr/local/bin/xsb-5.0.0/syslib/machine.xwam
 ... standard:open/3  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
@@ -100,4 +100,4 @@ Forward Continuation...
 | ?- 
 yes
 | ?- 
-End XSB (cputime 0.37 secs, elapsetime 0.41 secs)
+End XSB (cputime 0.34 secs, elapsetime 0.38 secs)

@@ -1,0 +1,84 @@
+[xsb_configuration loaded, cpu time used: 0.001 seconds]
+[sysinitrc loaded]
+[xsbbrat loaded]
+
+XSB Version 5.0.0 (Green Tea) of May 15, 2022
+[x86_64-pc-linux-gnu 64 bits; mode: optimal; engine: slg-wam; scheduling: local]
+[Build date: 2024-01-08]
+
+| ?- [libmulval loaded]
+
+yes
+| ?- [auxiliary loaded]
+
+yes
+| ?- [vul_summary loaded]
+
+yes
+| ?- [./nessus.P dynamically loaded, cpu time used: 0.016 seconds]
+
+yes
+| ?- 
+yes
+| ?- ++Error[XSB/Runtime/P]: [Existence (No predicate usermod : vulExists / 3 exists)] []
+Forward Continuation...
+... machine:xsb_backtrace/1  From /usr/local/bin/xsb-5.0.0/syslib/machine.xwam
+... standard:call_c/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... setof:bfindall/4  From /usr/local/bin/xsb-5.0.0/syslib/setof.xwam
+... setof:bagof1/3  From /usr/local/bin/xsb-5.0.0/syslib/setof.xwam
+... setof:setof/3  From /usr/local/bin/xsb-5.0.0/syslib/setof.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... setof:findall/3  From /usr/local/bin/xsb-5.0.0/syslib/setof.xwam
+... x_interp:_$call/1  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... x_interp:call_query/1  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:catch/3  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... x_interp:interpreter/0  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... loader:ll_code_call/3  From /usr/local/bin/xsb-5.0.0/syslib/loader.xwam
+... loader:find_ofile_and_load/7  From /usr/local/bin/xsb-5.0.0/syslib/loader.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:catch/3  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+| ?- ++Error[XSB/Runtime/P]: [Existence (No predicate usermod : networkServiceInfo / 5 exists)] []
+Forward Continuation...
+... machine:xsb_backtrace/1  From /usr/local/bin/xsb-5.0.0/syslib/machine.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:call_c/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... x_interp:_$call/1  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... x_interp:call_query/1  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:catch/3  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... x_interp:interpreter/0  From /usr/local/bin/xsb-5.0.0/syslib/x_interp.xwam
+... loader:ll_code_call/3  From /usr/local/bin/xsb-5.0.0/syslib/loader.xwam
+... loader:find_ofile_and_load/7  From /usr/local/bin/xsb-5.0.0/syslib/loader.xwam
+... standard:call/1  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+... standard:catch/3  From /usr/local/bin/xsb-5.0.0/syslib/standard.xwam
+| ?- 
+Host = _h377
+Host1 = _h419
+Protocol = _h461
+Port = _h503
+L = [hacl(_h1064,_h1065,_h1066,_h1067)]
+yes
+| ?- 
+A = _h377
+B = _h419
+C = _h461
+L = [hasAccount(192.168.0.108_victim,192.168.0.108,user),hasAccount(192.168.0.106_victim,192.168.0.106,user),hasAccount(192.168.0.104_victim,192.168.0.104,user),hasAccount(192.168.0.103_victim,192.168.0.103,user),hasAccount(192.168.0.101_victim,192.168.0.101,user),hasAccount(192.168.0.100_victim,192.168.0.100,user),hasAccount(192.168.0.1_victim,192.168.0.1,user)]
+yes
+| ?- 
+A = _h377
+L = [inCompetent(192.168.0.108_victim),inCompetent(192.168.0.106_victim),inCompetent(192.168.0.104_victim),inCompetent(192.168.0.103_victim),inCompetent(192.168.0.101_victim),inCompetent(192.168.0.100_victim),inCompetent(192.168.0.1_victim)]
+yes
+| ?- 
+A = _h377
+L = [attackGoal(execCode(192.168.0.108,_h751)),attackGoal(execCode(192.168.0.106,_h758)),attackGoal(execCode(192.168.0.104,_h765)),attackGoal(execCode(192.168.0.103,_h772)),attackGoal(execCode(192.168.0.101,_h779)),attackGoal(execCode(192.168.0.100,_h786)),attackGoal(execCode(192.168.0.1,_h793))]
+yes
+| ?- 
+A = _h377
+L = [attackerLocated(internet),attackerLocated(internet),attackerLocated(internet),attackerLocated(internet),attackerLocated(internet),attackerLocated(internet),attackerLocated(internet)]
+yes
+| ?- 
+yes
+| ?- 
+End XSB (cputime 0.11 secs, elapsetime 0.12 secs)

@@ -54,7 +54,7 @@ else
 fi
 
 
-sudo java -cp $CLASSPATH GetTplQry_nessusXML vulInfo.txt
+java -cp $CLASSPATH GetTplQry_nessusXML vulInfo.txt
 
 xsb_logfile="xsb_nessus_translate.log"
 xsb 2>$xsb_logfile 1>&2 <<EOF

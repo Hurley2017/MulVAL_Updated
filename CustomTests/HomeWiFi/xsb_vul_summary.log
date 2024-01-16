@@ -1,4 +1,4 @@
-[xsb_configuration loaded]
+[xsb_configuration loaded, cpu time used: 0.001 seconds]
 [sysinitrc loaded]
 [xsbbrat loaded]
 
@@ -9,13 +9,13 @@ XSB Version 5.0.0 (Green Tea) of May 15, 2022
 | ?- [libmulval loaded]
 
 yes
-| ?- [auxiliary loaded, cpu time used: 0.001 seconds]
+| ?- [auxiliary loaded]
 
 yes
 | ?- [vul_summary loaded]
 
 yes
-| ?- [./nessus.P dynamically loaded, cpu time used: 0.017 seconds]
+| ?- [./nessus.P dynamically loaded, cpu time used: 0.013 seconds]
 
 yes
 | ?- 
@@ -81,4 +81,4 @@ yes
 | ?- 
 yes
 | ?- 
-End XSB (cputime 0.07 secs, elapsetime 0.08 secs)
+End XSB (cputime 0.06 secs, elapsetime 0.07 secs)
